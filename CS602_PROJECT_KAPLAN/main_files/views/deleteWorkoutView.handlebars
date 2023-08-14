@@ -1,0 +1,54 @@
+<div class="table-responsive">
+  <form method="post" action='/workouts/delete/{{data.id}}'>
+    <table class="table table-condensed">
+      <tbody>
+        <tr>
+          <th>Client: </td>
+          <td><input type="text" name="client" required size="40" 
+                  value="{{data.client}}"></td>
+        </tr>
+        <tr>
+          <th>Date: </td>
+          <td><input type="text" name="date" required size="40" 
+                  value="{{data.date}}"></td>
+        </tr>
+        <tr>
+          <th>Workout: </td>
+          <td><input type="text" name="workout" required size="40" 
+                  value="{{data.workout}}"></td>
+        </tr>
+        <tr>
+          <th>Total Time: </td>
+          <td><input type="text" name="time" required size="40" 
+                  value="{{data.time}}"></td>
+        </tr>
+        <tr>
+          <th>Exercises: </td>
+          <td><input type="text" name="exercises" required size="40" 
+                  value="{{data.exercises}}"></td>
+        </tr>
+        <tr>
+          <th>Coach's Notes: </td>
+          <td><input type="text" name="coachNotes" required size="40" 
+                  value="{{data.coachNotes}}"></td>
+        </tr>
+        <tr>
+          <th>Notes: </td>
+          <td><input type="text" name="notes" required size="40" 
+                  value="{{data.notes}}"></td>
+        </tr>
+        <input type="hidden" name="id" value="{{data.id}}">
+      </tbody>
+      <tfooter>
+        <tr>
+          <td></td>
+          <td>
+              <input type="submit" value="DELETE" class="btn btn-success">
+              <input type="button" value="Cancel" class="btn btn-danger"
+                  class="cancel" onclick="cancelDelete()">
+          </td>
+        </tr>
+      </tfooter>
+    </table>
+  </form>
+</div>

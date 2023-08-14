@@ -1,0 +1,41 @@
+<div class="table-responsive">
+		<table class="table table-condensed">
+			{{#if data}}
+			<thead>
+				<tr>
+					<th>Client</th>
+					<th>Date</th>
+					<th>Workout</th>
+					<th>Total Time</th>
+					<th>Exercises</th>
+					<th>Notes</th>
+					<th></th>
+				</tr>
+			</thead>
+			{{else}}
+			<tr><td colspan="3">No workouts found ... Add One!</td></tr>
+			{{/if}}
+			<tbody>
+				{{#each data}}
+					<tr>
+						<td>{{this.client}}</td>
+						<td>{{this.date}}</td>
+						<td>{{this.workout}}</td>
+						<td>{{this.time}}</td>
+						<td>{{this.exercises}}</td>
+						<td>{{this.notes}}</td>
+						</td>
+
+					</tr>
+				{{/each}}
+			</tbody>
+			<tfooter>
+				<tr><td><br>
+				<button class="btn btn-primary" 
+						onClick="clientLogIn();">Log In Page</button>
+				<button class="btn btn-primary" 
+						onClick="addWorkoutClient();">Add Workout</button>
+				</td></tr>
+			</tfooter>
+		</table>
+	</div>

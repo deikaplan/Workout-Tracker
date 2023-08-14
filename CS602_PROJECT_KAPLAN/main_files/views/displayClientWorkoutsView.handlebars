@@ -1,0 +1,62 @@
+<div>
+	<b>Lookup By Client Name</b>
+<p></p>
+<form method="POST" action="/workouts">
+	
+	<label for="id">Client Name:</label>
+	<input  type="text" name="name" size="30" placeholder="Enter name here">
+	<label for="date">Date:</label>
+    <input  type="text" name="date" placeholder="Enter date here">
+	<p></p>
+  	<input type="submit" class="btn btn-primary" />
+	<br><br><br>
+   
+</form>
+
+	<div class="table-responsive">
+		<table class="table table-condensed">
+			{{#if data}}
+			<thead>
+				<tr>
+					<th>Client</th>
+					<th>Date</th>
+					<th>Workout</th>
+					<th>Total Time</th>
+					<th>Exercises</th>
+					<th>Coach's Notes</th>
+					<th>Notes</th>
+					<th></th>
+				</tr>
+			</thead>
+			{{else}}
+			<tr><td colspan="3">No workouts found ... Add One!</td></tr>
+			{{/if}}
+			<tbody>
+				{{#each data}}
+					<tr>
+						<td>{{this.client}}</td>
+						<td>{{this.date}}</td>
+						<td>{{this.workout}}</td>
+						<td>{{this.time}}</td>
+						<td>{{this.exercises}}</td>
+						<td>{{this.coachNotes}}</td>
+						<td>{{this.notes}}</td>
+						</td>
+						<td>
+							<a href="/workouts/edit/{{this.id}}">Edit</a> | 
+							<a href="/workouts/delete/{{this.id}}">Delete</a>
+						</td>
+					</tr>
+				{{/each}}
+			</tbody>
+			<tfooter>
+				<tr><td><br>
+				<button class="btn btn-primary" 
+						onClick="addWorkout();">Add</button>
+				<button class="btn btn-primary" 
+						onClick="cancelAdd();">Home Page</button>
+				</td></tr>
+			</tfooter>
+		</table>
+	</div>
+</div>

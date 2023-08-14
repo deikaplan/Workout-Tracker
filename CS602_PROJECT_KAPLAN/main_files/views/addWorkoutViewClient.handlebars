@@ -1,0 +1,51 @@
+ <div class="table-responsive">
+  <form method="post" action="/client/add">
+    <table class="table table-condensed">
+      <tbody>
+       
+       <tr>
+         <th>Client: </th>
+         <td><input type="text" name="client" required 
+              placeholder="Enter client name"></td>
+       </tr>
+       <tr>
+         <th>Date: </th>
+         <td><input type="text" name="date" required 
+              placeholder="Enter date"></td>
+       </tr>
+       <tr>
+         <th>Workout: </th>
+         <td><input type="text" name="workout" required 
+              placeholder="Enter workout"></td>
+       </tr>
+       <tr>
+         <th>Total Time: </th>
+         <td><input type="text" name="time" required 
+              placeholder="Time to complete"></td>
+       </tr>
+       <tr>
+         <th>Exercises: </th>
+         <td><input type="text" name="exercises" required 
+              placeholder="Enter exercises"></td>
+       </tr>
+       <tr>
+         <th>Notes: </th>
+         <td><input type="text" name="notes"  
+              placeholder="Enter notes"></td>
+       </tr>
+       
+       </tbody>
+      <tfooter>
+        <tr>
+          <td></td>
+          <td>
+           <input type="submit" value="Save" 
+              class="btn btn-success">
+           <input type="button" value="Cancel" 
+              class="btn btn-danger" onclick="cancelAddClient()">
+          </td>
+        </tr>
+      </tfooter>
+    </table>
+  </form>
+</div>
