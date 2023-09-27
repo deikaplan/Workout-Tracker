@@ -18,25 +18,25 @@ This route displays the full database of workouts in the coach/admin view. Each 
 
 This view is intended to serve as the Coach's view. From this page, the coach is also able to search for a specific workout by entering the client name OR the workout date in the search bar. If both are entered, workouts that match EITHER parameter are shown.
 
-![image](https://github.com/deikaplan/Workout-Tracker/assets/45632694/8f8ae7a9-38bd-4fdf-a986-bb831d23862e)
+![image](https://github.com/deikaplan/Workout-Tracker/assets/45632694/39ce549c-3d22-4b50-9827-d997a0d5db5c)
 
 
 **/workouts/add**
 This route allows the coach to add a new workout to the database.
 
-![image](https://github.com/deikaplan/Workout-Tracker/assets/45632694/cf762604-f411-4915-b55a-5bd8e0daa83c)
+![image](https://github.com/deikaplan/Workout-Tracker/assets/45632694/6559ecc8-77f5-4a4f-9226-c0d818ddcc98)
 
 
 **/workouts/edit**
 This route allows the coach to edit an existing workout in the database.
 
-![image](https://github.com/deikaplan/Workout-Tracker/assets/45632694/03972fd8-f241-42db-ba7d-9b07ebf4c4af)
+![image](https://github.com/deikaplan/Workout-Tracker/assets/45632694/131b4790-8c0a-48df-98d4-e9a600b8bb3a)
 
 
 **/workouts/delete**
 This route allows the coach to delete an existing workout in the database. A confirmation page is created with fields pre-filled. The coach can then press "OK" to confirm delete, or "Cancel" to return to the main view.
 
-![image](https://github.com/deikaplan/Workout-Tracker/assets/45632694/903059be-0b36-4635-8c18-edd2f4e43fcc)
+![image](https://github.com/deikaplan/Workout-Tracker/assets/45632694/6091e2f0-7e3f-4325-b4cd-a2e666f26c6d)
 
 
 **/client**
@@ -44,14 +44,16 @@ This is the main client view for this app. This view asks the client to enter th
 The main purpose of the client view is for the client to view the coach's notes from a specific workout on a specific day. The client is also able to log a home workout, which will show up in the coach’s view and will be notated as a “client-logged workout”.
 The client does not have the ability to make any changes to the workouts the coach has logged. This view is purely for informational purposes for the client.
 
-![image](https://github.com/deikaplan/Workout-Tracker/assets/45632694/78850f51-7475-493a-9fcd-0529a3f5162c)
+![image](https://github.com/deikaplan/Workout-Tracker/assets/45632694/b042f958-8a7e-4ce4-815c-f19a60911c7a)
 
-![image](https://github.com/deikaplan/Workout-Tracker/assets/45632694/b33d4820-b33e-4e82-ae7c-4399c2f1d0b2)
+![image](https://github.com/deikaplan/Workout-Tracker/assets/45632694/719466f2-4c6f-4d32-a1d3-87d9fb505867)
 
 
 **/client/add**
 This route allows a client to add their own workout. Once their workout is added, it is accessible in both the client and the admin/coach view, but the client is unable to make further changes to it. 
 All client added workouts are automatically labeled as a "client-logged workout" from the coach's view, in the "Coach's Notes" section.
+
+![image](https://github.com/deikaplan/Workout-Tracker/assets/45632694/a62be095-25f9-4a8b-a0d1-72eae626e57b)
 
 __________________________________
 
