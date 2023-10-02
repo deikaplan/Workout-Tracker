@@ -1,6 +1,7 @@
 # Workout-Tracker
 
-This project is titled "Workout Tracker - Kaplan's Gym" and serves as an exercise workout tracker for a coach to manage clients. 
+This project is titled "Workout Tracker - Kaplan's Gym" and serves as an exercise workout tracker for a coach to manage clients. The project utilizes HTML/CSS, MongoDB.
+
 There is a coach view (/workouts) as well as a client portal (/client), each with its own privileges. 
 
 To feed into and create the initial database, enter "node initDB.js" into the terminal.
